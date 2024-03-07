@@ -1,6 +1,12 @@
+import type { Metadata } from "next";
 import Parallax from './components/parallax';
 import Card from './components/card'
 import Footer from "./components/footer"
+
+export const metadata: Metadata = {
+  title: "True North - Home",
+  description: "True North is your guide to all things compass-related. From learning how to read a compass to understanding the importance of True North, we have you covered. Explore our website to discover the fascinating world of navigation and find your way with ease.",
+};
 
 export default function Home() {
   return (
