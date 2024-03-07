@@ -1,7 +1,7 @@
 import Styles from "./card.module.css"
 
 
-const Card = ({ title, text, imgUrl, btnUrl, isLeft }: { title: string, text: string, imgUrl: string, btnUrl: string, isLeft: boolean }) => {
+const Card = ({ title, text, imgUrl, btnUrl, isLeft }: { title: string, text: string, imgUrl: string, btnUrl: string, isLeft?: boolean }) => {
     return (
         <div className={Styles.cardContainer}>
             {!isLeft && <div className={Styles.cardImage}>
@@ -15,7 +15,6 @@ const Card = ({ title, text, imgUrl, btnUrl, isLeft }: { title: string, text: st
             {isLeft && <div className={Styles.cardImage}>
                 <img src={imgUrl} />
             </div>}
-
         </div>
     )
 }

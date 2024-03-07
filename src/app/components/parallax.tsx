@@ -4,15 +4,15 @@ import { useRef, useEffect } from 'react';
 import Styles from './parallax.module.css'
 
 const Parallax = () => {
-
-    const textRef = useRef();
-    const hill1Ref = useRef();
-    const hill4Ref = useRef();
-    const hill5Ref = useRef();
-    const leafRef = useRef();
+    
+    const textRef = useRef<HTMLHeadingElement>(null);
+    const hill1Ref = useRef<HTMLImageElement>(null);
+    const hill4Ref = useRef<HTMLImageElement>(null);
+    const hill5Ref = useRef<HTMLImageElement>(null);
+    const leafRef = useRef<HTMLImageElement>(null);
 
     const handleScroll = () => {
-        if (window.scrollY < window.innerHeight) {
+        if (window.scrollY < window.innerHeight && leafRef.current && textRef.current && hill4Ref.current && hill5Ref.current) {
 
             let value = window.scrollY;
             leafRef.current.style.top = value * -1.5 + "px";
