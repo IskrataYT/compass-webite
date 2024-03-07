@@ -1,0 +1,53 @@
+.sourcesContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #013329;
+    padding-bottom: 3%;
+}
+
+.returnButton {
+    padding: 1% 2%;
+    background-color: #226457;
+    border-radius: 2em;
+    color: white;
+    font-size: 30px;
+}
+
+.sourcesTitle {
+    font-size: 64px;
+    color: white;
+    text-align: center;
+}
+
+.sourcesList {
+    font-size: 30px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    margin: 11% 0;
+}
+
+.sourcesList a {
+    transition: .2s;
+}
+
+.sourcesList a:hover {
+    color: rgb(108, 214, 164);
+    transition: .2s;
+}
+
+.returnButton:hover {
+    background-color: #4f9789;
+    transition: ease-in-out 0.4s;
+}
+
+.returnButton:active {
+    background-color: #104137;
+    transition: ease-in-out 0.4s;
+}

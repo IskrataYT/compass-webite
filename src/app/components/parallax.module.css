@@ -1,0 +1,23 @@
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-bottom: 5%;
+}
+
+.parallax img {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.title {
+    position: absolute;
+    text-align: center;
+    font-size: 10em;
+    color: white;
+    text-shadow: 5px 5px 0px rgba(0,0,0,1);
+}

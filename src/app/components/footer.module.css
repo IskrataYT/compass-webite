@@ -1,0 +1,21 @@
+.footerContainer {
+    display: flex;
+    background-color: #013329;
+    box-shadow: inset 0px 18px 21px -11px rgba(0, 0, 0, 0.295);
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+    padding: 1% 0;
+    flex-direction: column;
+}
+
+.footerContainer a {
+    transition: color .2s;
+}
+
+.footerContainer a:hover {
+    border-bottom: 1px solid rgb(108, 214, 164);
+    color: rgb(108, 214, 164);
+    transition: color .2s;
+}
